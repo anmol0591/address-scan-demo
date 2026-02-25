@@ -89,7 +89,7 @@ ${rawOcrText}`
         contents: userPrompt,
       })
 
-      const text = typeof response.text === 'function' ? response.text() : response.text
+      const text = response.text
       if (!text || typeof text !== 'string') {
         throw new Error('Gemini did not return text.')
       }

@@ -61,8 +61,9 @@ export function useAddressForm() {
           const value = parsed[key]
           if (value === undefined || value === '') return
           const formKey = key as keyof AddressFormState
+          if (formKey === 'defaultAddress') return
           if (replaceExisting || !dirty[formKey] || prev[formKey] === '') {
-            ;(next as Record<string, string>)[formKey] = value
+            next[formKey] = value as AddressFormState[typeof formKey]
           }
         })
         return next

@@ -2,8 +2,6 @@ import {
   emptyConfidence,
   emptyParsedAddress,
   type ParseAddressResult,
-  type ParsedAddress,
-  type ParsedAddressConfidence,
 } from './types'
 import { getAllStatePatterns } from './stateLists'
 
