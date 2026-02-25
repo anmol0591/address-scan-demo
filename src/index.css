@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #111;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Amazon-style form colors */
+:root {
+  --amazon-page-bg: #fff;
+  --amazon-text: #111;
+  --amazon-label: #111;
+  --amazon-input-border: #a2a6ac;
+  --amazon-input-bg: #fff;
+  --amazon-hint: #565959;
+  --amazon-link: #007185;
+  --amazon-link-hover: #c7511f;
+  --amazon-orange-icon: #c45500;
+  --amazon-btn-yellow: #ffd814;
+  --amazon-btn-yellow-hover: #f7ca00;
+  --amazon-btn-border: #f0c14b;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
